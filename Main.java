@@ -36,6 +36,12 @@ public class Main {
                 break;
         }
         cool.print(arr1);
+        int[][] arr2 = new int[arr1[0][0]][arr1[0][1]];
+        for (int i = 0; i < arr1[0][2]; i++) {
+            arr2[arr1[i + 1][0]][arr1[i + 1][1]] = arr1[i + 1][2];
+        }
+        System.out.println("还原后的数组");
+        cool.print(arr2);
     }
 }
 class Cool
